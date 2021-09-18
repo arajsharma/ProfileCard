@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        @import url(https://fonts.google.com/specimen/Kumbh+Sans);
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url('./images/bg-pattern-bottom.svg') no-repeat;
+            background-color: hsl(185, 75%, 39%);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+        .card{
+            background: url(./images/bg-pattern-card.svg) no-repeat;
+            background-size: 100% 40%;
+            background-color: white;
+            border-radius: 10px;
+            height: 70%;
+            max-height: 550px;
+            width: 25%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .cardimg{
+            border-radius: 50%;
+            width: 50%;
+            max-width: 150px;
+            height: 50%;
+            max-height: 150px;
+            margin: 10px auto;
+        }
+        .name{
+            display: inherit;
+        }
+        span{
+            font-size: 18px;
+            font-family: 'Kumbh',Sans;
+            font-weight: 700;
+            /* width: 100px; */
+            text-align: center;
+            width: 80%;
+        }
+        .age{
+            padding: 0px 10px;
+        }
+        .city{
+            opacity: 0.7;
+            font-weight: 400;
+            margin: 0px auto;
+        }
+        hr{
+            border: 0;
+            clear: both;
+            display: block;
+            width: 100%;
+            background-color: #726d6d;
+            height: 1px;
+            margin-top: 10px;
+        }
+        .likefollow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 400px;
+            height: 10%;
+            margin: 10px auto;
+            max-height: 50px;
+            margin-top: 25px;
+        }
+        .follow{
+            width: 30%;
+            max-width: 80px;
+            margin-right: 10px;
+            margin-left: 15px;
+        }
+        .likes{
+            width: 30%;
+            max-width: 80px;
+            margin-right: 10px;
+            margin-left: 15px;
+        }
+        .pic{
+            width: 30%;
+            max-width: 80px;
+            margin-right: 0px;
+            margin-left: 2px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./images/image-victor.jpg" alt="victor" class="cardimg">
+            <div class="name">
+                <span>Victor Crest </span>
+                <p class="age">26</p>
+            </div>
+            <span class="city">London</span>
+            <hr>
+            
+            <div class="likefollow">
+                <div class="follow">
+                    <h3 class="followno">80K</h3>
+                    <p class="f">Followers</p>
+                </div>
+                <div class="likes">
+                    <h3 class="likeno">803K</h3>
+                    <p class="l">Likes</p>
+                </div>
+                <div class="pic">
+                    <h3 class="picno">80K</h3>
+                    <p class="pic">Picture</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
